@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HBDDD khaniaaaa Darii Baimmm</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Animate.css CDN -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+  <!-- Theme color for mobile browser -->
+  <meta name="theme-color" content="#3B82F6" />
+</head>
+<body
+  class="flex justify-center items-center h-screen overflow-y-auto bg-cover bg-center"
+  style="background-image: url('https://i.pinimg.com/1200x/a6/ba/03/a6ba039eb849a661db08b9e313235e64.jpg');"
+>
+  <div
+    id="Kartu"
+    class="bg-white border-4 border-gray-300 px-10 py-8 rounded-xl text-center shadow-lg shadow-blue-300 animate__animated animate__backInDown m-8 w-80"
+  >
+    <h1 class="text-3xl">happy birthdayyy</h1>
+    <h1 class="text-4xl text-blue-500 font-bold animate__animated animate__pulse animate__infinite">
+      khaniaaa
+    </h1>
+    <button
+      class="p-2 bg-blue-600 text-white rounded mt-5 hover:bg-blue-900 transition ease-in w-full animate__animated animate__delay-1s animate__tada"
+      onclick="UbahKartu()"
+    >
+      klikk disiniii
+    </button>
+  </div>
+
+  <!-- Confetti JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+
+  <script>
+    // Tampilkan confetti saat halaman dibuka
+    confetti({
+      particleCount: 100,
+      spread: 70,
+      origin: { y: 0.6 },
+    });
+
+    function UbahKartu() {
+      const kartu = document.getElementById("Kartu");
+      kartu.innerHTML = `
+        <h1 class="font-semibold animate__animated animate__zoomIn text-left text-sm">
+  selamat ulang tahun, khaniaaa 🎉💙<br><br>
+  gw gak jago ngerangkai kata manis 😅, tapi hari ini gw cuma mau bilang... gw bersyukur banget masih bisa ngobrol sama lu tiap hari 💬 (meskipun kadang mati topik 😶), masih bisa bercanda 🤭, dengerin cerita-cerita receh lu yang entah kenapa selalu bikin hari gw lebih hidup 🌈<br><br>
+  lu selalu punya cara buat bikin semuanya kerasa lebih ringan 🫶. meskipun kadang nyebelin 😤, suka ngambek 😒, atau tiba-tiba diem aja 🫠, gw tetep gak bisa bener-bener kesel. mungkin karena dari awal, gw udah jatuh sama cara lu jadi diri sendiri 🧸<br><br>
+  umur lu nambah 🎂, tapi buat gw ini bukan soal angka. ini soal gimana lu makin kuat 💪, makin sabar 😌, dan gw bangga ngeliat itu 💐<br><br>
+  semoga semua yang lu doain kejadian 🤲. semoga kalau lu capek 💤, inget... gw ada 🧍‍♂️. gak buat nyelesaiin semuanya, tapi buat nemenin 😌❤️
+</h1>
+        <h2 class="mt-5 animate__animated animate__fadeIn text-right">- dari: baimmm -</h2>
+      <button
+      class="p-2 bg-slate-600 text-white rounded mt-5 hover:bg-slate-900 transition ease-in w-full animate__animated animate__delay-1s animate__tada"
+      onclick="refresh()"
+    >
+      tutupp
+    </button>
+        `;
+       }
+        function refresh() {
+          location.reload();
+        }
+  </script>
+</body>
+</html>
